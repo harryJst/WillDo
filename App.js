@@ -18,6 +18,7 @@ export default class App extends React.Component {
   render() {
     return (
       <ScrollView>
+        <View >
 
         </View>
       </ScrollView>
@@ -26,5 +27,6 @@ export default class App extends React.Component {
 }
 
 const styles = StyleSheet.create({
+ 
 
 });
