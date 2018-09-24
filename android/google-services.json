@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "747649167771",
+    "firebase_url": "https://willdo-31ecd.firebaseio.com",
+    "project_id": "willdo-31ecd",
+    "storage_bucket": "willdo-31ecd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:747649167771:android:da6812933fa341cc",
+        "android_client_info": {
+          "package_name": "com.harryjust.WillDo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "747649167771-jmn2jbq74n5d3nglqj07etik6u56b173.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAi_sjcNp2HALtK64mP7aDcMd5xqCFKcWs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

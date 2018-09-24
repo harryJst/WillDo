@@ -1,32 +1,22 @@
 import React from 'react';
-import { StyleSheet, Platform, Image, Text, View, ScrollView } from 'react-native';
+import { createStackNavigator } from 'react-navigation';
 
-import firebase from 'react-native-firebase';
 
-export default class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      // firebase things?
-    };
+import LoginScreenNavigator from './navigation/LoginScreenNavigator';
+import TabViewNavigator from './navigation/TabViewNavigator'
+
+//// TODO: make modal and have two sub navigation controllers
+
+
+export default createStackNavigator({
+
+  Main: LoginScreenNavigator,
+  TabView : TabViewNavigator,
+
+},
+  {
+      mode: 'modal',
+      headerMode: 'none',
+      //initialRouteName: "Main"
   }
-
-  componentDidMount() {
-    // firebase things?
-  }
-
-  render() {
-    return (
-      <ScrollView>
-        <View >
-
-        </View>
-      </ScrollView>
-    );
-  }
-}
-
-const styles = StyleSheet.create({
- 
-
-});
+);
