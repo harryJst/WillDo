@@ -22,11 +22,45 @@ export default class SignUp extends React.Component {
 
 
     return (
-      <ScrollView>
-        <View>
+        <ScrollView>
+          <View >
+          <TextInput
+            style={{height: 40}}
+            placeholder="Email"
+            onChangeText={(text) => this.setState({email})}
+            />
+            <TextInput
+              style={{height: 40}}
+              placeholder="Password"
+              onChangeText={(text) => this.setState({password})}
+              />
+              <Button
 
-        </View>
-      </ScrollView>
+                  onPress={() => {
+                      console.log("cunt");
+
+                      this.fireAuth.signUp(email,password).then(
+                          () => {
+                              console.log("Initialized user details");
+                              navigate("TabView");
+                          },
+                          () => {
+                              console.log(err);
+                          });
+                  }}
+                  title="Login"
+              />
+
+              <Button
+
+                  onPress={() => {
+
+                  }}
+                  title="Forgot Password"
+              />
+
+          </View>
+        </ScrollView>
     );
   }
 }

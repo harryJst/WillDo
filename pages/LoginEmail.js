@@ -14,11 +14,21 @@ export default class LoginEmail extends React.Component {
     this.state = {
       // firebase things?
     };
-    this.fireAuth = new FirebaseAuth();
   }
 
   componentDidMount() {
     // firebase things?
+    this.fireAuth = new FirebaseAuth();
+    console.log("checking");
+
+    // this.fireAuth.checkPersistenceState().then(
+    //     () => {
+    //         console.log("Initialized user details");
+    //         this.props.navigation.navigate("TabView");
+    //     },() => {
+    //         console.log(err);
+    //     });
+
   }
 
   render() {

@@ -31,31 +31,27 @@ export default class WelcomeScreen extends React.Component {
         return (
             <ScrollView>
             <View >
-            <Text>WillDo</Text>
+            <Text style={styles.titleText}>WillDo</Text>
 
-            <Button
 
-                onPress={() => {
-                    Alert.alert('You tapped the button!');
-                }}
-            title="Press Me"
-            />
 
-            <Button
 
-                onPress={() => {
-                    //Alert.alert('You tapped the button!');
-                    //navigate('LoginGoogle', { name: 'Jane' })
-                    //FirebaseAuth.loginGoogle();
-                }}
-                title="Login google"
-            />
+
             <Button
 
                 onPress={() => {
                     navigate('LoginEmail', { name: 'Jane' })
                 }}
             title="Login Email"
+            />
+
+            <Button
+
+                onPress={() => {
+                    navigate('SignUp');
+
+                }}
+            title="signUp with email"
             />
             </View>
             </ScrollView>
@@ -64,6 +60,13 @@ export default class WelcomeScreen extends React.Component {
 }
 
 const styles = StyleSheet.create({
+
+    titleText: {
+    fontSize: 70,
+    fontWeight: 'bold',
+    fontFamily: 'Cochin',
+    textAlign: 'center'
+  }
 
 
 });
